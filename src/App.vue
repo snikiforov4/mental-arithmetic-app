@@ -1,16 +1,19 @@
 <template>
   <div id="app" class="container">
     <GameControlPanel/>
+    <Calculator/>
   </div>
 </template>
 
 <script>
 import GameControlPanel from './components/GameControlPanel'
+import Calculator from './components/Calculator'
 
 export default {
   name: 'App',
   components: {
-    GameControlPanel
+    GameControlPanel,
+    Calculator
   }
 }
 </script>
