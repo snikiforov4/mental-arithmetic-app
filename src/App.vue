@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <HelloWorld/>
+  <div id="app" class="container">
+    <GameControlPanel/>
   </div>
 </template>
 
@@ -17,11 +17,15 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 2em;
+}
+.container {
+  max-width: 700px;
+  width: 700px;
 }
 </style>
