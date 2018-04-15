@@ -1,10 +1,12 @@
 <template>
   <div class="columns">
     <div class="column is-two-thirds">
-      <input type="button" class="button is-danger is-large is-pulled-left" value="Cancel">
+      <a class="button is-danger is-outlined is-large is-capitalized is-pulled-left">
+        Cancel
+      </a>
     </div>
     <div class="column is-one-third">
-      <p class="title is-1 is-pulled-right">13:42</p>
+      <span class="title is-1 is-pulled-right">13:42</span>
     </div>
   </div>
 </template>
