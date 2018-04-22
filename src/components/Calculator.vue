@@ -30,7 +30,7 @@
           ],
           [
             {sign: '7', type: 'digit'}, {sign: '8', type: 'digit'},
-            {sign: '9', type: 'digit'}, {sign: '?', type: 'operator'},
+            {sign: '9', type: 'digit'}, null,
           ],
           [
             null, {sign: '0', type: 'digit'}, null, {sign: '=', type: 'operator'},
@@ -51,7 +51,6 @@
     border-radius: 50%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
-    text-decoration: none;
     cursor: pointer;
     font-size: 2em;
     opacity: 0.8;
