@@ -1,17 +1,17 @@
 <template>
   <div class="columns">
     <div class="column is-two-thirds">
-      <a class="button is-danger is-outlined is-large is-capitalized is-pulled-left">
-        Cancel
-      </a>
+      <a class="button is-danger is-outlined is-large is-capitalized is-pulled-left">Cancel</a>
     </div>
     <div class="column is-one-third">
-      <span class="title is-1 is-pulled-right">{{ leftTime }}</span>
+      <span class="title is-1 is-pulled-right">{{ formattedLeftTime }}</span>
     </div>
   </div>
 </template>
 
 <script>
+  import moment from 'moment';
+  import 'moment-duration-format';
   export default {
     name: 'GameControlPanel',
     props: {
@@ -23,17 +23,19 @@
     data() {
       return {
         gameEndTime: null,
-        leftTime: null,
+        leftTime: Number(this.gameDuration),
       }
     },
-    created() {
-      this.leftTime = Math.trunc(Number(this.gameDuration));
-    },
     mounted() {
-      this.gameEndTime = Math.trunc((new Date()).getTime() / 1000) + Number(this.gameDuration);
+      this.gameEndTime = moment().add(this.gameDuration, 'seconds');
       window.setInterval(() => {
-        this.leftTime = this.gameEndTime - Math.trunc((new Date()).getTime() / 1000);
+        this.leftTime = this.gameEndTime.diff(moment(), 'seconds');
       }, 1000);
     },
+    computed: {
+      formattedLeftTime: function () {
+        return moment.duration(this.leftTime, "seconds").format('mm:ss')
+      }
+    }
   }
 </script>
