@@ -1,17 +1,19 @@
 <template>
   <div id="app" class="container">
     <p class="title is-1 has-text-left">Hello!</p>
-
+    <UserProgress/>
   </div>
 </template>
 
 <script>
  import TheGame from './components/TheGame'
+import UserProgress from './components/UserProgress'
 
 export default {
   name: 'App',
   components: {
     TheGame,
+    UserProgress,
   }
 }
 </script>
