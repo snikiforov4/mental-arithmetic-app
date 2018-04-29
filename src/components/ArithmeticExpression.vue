@@ -60,9 +60,7 @@
     min-width: 1rem;
     min-height: 3rem;
     padding: 0 1rem;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    border: 2px solid transparent;
   }
 
   .changeable {
