@@ -2,6 +2,7 @@
   <div id="app" class="container">
     <p class="title is-1 has-text-left">Hello!</p>
     <UserProgress/>
+    <a class="button is-primary is-outlined is-large is-capitalized is-pulled-right">Play</a>
   </div>
 </template>
 
