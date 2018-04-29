@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="container">
-    <the-game></the-game>
+    <p class="title is-1 has-text-left">Hello!</p>
+
   </div>
 </template>
 
