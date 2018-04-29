@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    <GameControlPanel/>
+    <GameControlPanel game-duration='900'/>
     <ArithmeticExpression/>
     <Calculator/>
   </div>

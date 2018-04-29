@@ -69,7 +69,7 @@
   }
 
   .editable {
-    border: 2px solid coral;
+    border-color: coral;
   }
 
 </style>
