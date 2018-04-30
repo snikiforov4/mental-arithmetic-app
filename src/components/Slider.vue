@@ -18,13 +18,16 @@
         type: [String, Number],
         required: true,
       },
+      default: {
+        type: [String, Number],
+      },
       label: {
         type: String,
       },
     },
     data() {
       return {
-        value: this.min,
+        value: this.default || Math.trunc((this.min + this.max) / 2),
       }
     },
   }

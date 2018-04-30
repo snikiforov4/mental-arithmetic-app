@@ -1,8 +1,8 @@
 <template>
   <div class="settings content is-size-5 has-text-left">
     <h2 class="title is-2">Settings</h2>
-    <Slider :min="durationRange.min" :max="durationRange.max" label="Game duration"/>
-    <Slider :min="difficultyRange.min" :max="difficultyRange.max" label="Game difficulty"/>
+    <Slider v-bind="duration"/>
+    <Slider v-bind="difficulty"/>
     <CheckedList :values="operations"/>
   </div>
 </template>
@@ -16,11 +16,17 @@
     components: {Slider, CheckedList},
     data() {
       return {
-        durationRange: {
+        duration: {
           min: 1,
           max: 15,
+          default: 10,
+          label: 'Game duration',
         },
-        difficultyRange: {min: 1, max: 3},
+        difficulty: {
+          min: 1,
+          max: 3,
+          label: 'Game difficulty',
+        },
         operations: ['addition', 'subtraction', 'multiplication', 'division'],
       }
     },
