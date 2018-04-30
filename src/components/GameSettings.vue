@@ -1,35 +1,25 @@
 <template>
-  <div class="settings is-size-5 has-text-left">
+  <div class="settings content is-size-5 has-text-left">
     <h2 class="title is-2">Settings</h2>
     <input type="range" min="1" max="15" class="slider" v-model="duration" id="duration">
     <label for="duration">Game duration {{ duration }}</label>
     <input type="range" min="1" max="3" class="slider" v-model="difficulty" id="difficulty">
     <label for="difficulty">Game difficulty {{ difficulty }}</label>
-    <div>
-      <input type="checkbox" id="addition" value="addition" v-model="operations">
-      <label for="addition">addition</label>
-      <br>
-      <input type="checkbox" id="subtraction" value="subtraction" v-model="operations">
-      <label for="subtraction">subtraction</label>
-      <br>
-      <input type="checkbox" id="multiplication" value="multiplication" v-model="operations">
-      <label for="multiplication">multiplication</label>
-      <br>
-      <input type="checkbox" id="division" value="division" v-model="operations">
-      <label for="division">division</label>
-      <br>
-    </div>
+    <CheckedList :values="operations"/>
   </div>
 </template>
 
 <script>
+  import CheckedList from "./CheckedList";
+
   export default {
     name: 'GameSettings',
+    components: {CheckedList},
     data() {
       return {
         duration: 7,
         difficulty: 2,
-        operations: ['addition'],
+        operations: ['addition', 'subtraction', 'multiplication', 'division'],
       }
     },
   };
