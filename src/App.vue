@@ -1,22 +1,16 @@
 <template>
   <div id="app" class="container">
-    <GameControlPanel game-duration='900'/>
-    <ArithmeticExpression/>
-    <Calculator/>
+    <the-game></the-game>
   </div>
 </template>
 
 <script>
-import GameControlPanel from './components/GameControlPanel'
-import Calculator from './components/Calculator'
-import ArithmeticExpression from './components/ArithmeticExpression'
+ import TheGame from './components/TheGame'
 
 export default {
   name: 'App',
   components: {
-    GameControlPanel,
-    ArithmeticExpression,
-    Calculator,
+    TheGame,
   }
 }
 </script>
