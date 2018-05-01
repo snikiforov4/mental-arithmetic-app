@@ -1,22 +1,18 @@
 <template>
   <div class="columns">
-    <div class="column is-one-fifth"></div>
-
-    <div class="column is-three-fifths">
+    <div class="column is-offset-one-fifth is-three-fifths">
       <div class="columns" v-for="rows in layout">
         <div class="column" v-for="row in rows">
           <button :class="row.type" :key="row.sign" v-if="row">{{ row.sign }}</button>
         </div>
       </div>
     </div>
-
-    <div class="is-one-fifth"></div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Calculator',
+    name: 'TheGameKeyPad',
     data() {
       return {
         layout: [
@@ -42,7 +38,6 @@
 </script>
 
 <style scoped>
-
   button {
     width: 2em;
     height: 2em;

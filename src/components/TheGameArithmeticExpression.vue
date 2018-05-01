@@ -2,7 +2,7 @@
   <div class="is-unselectable">
     <p class="is-size-2">
       <span v-for="({value, changeable}, idx) in expArgs"
-            class="fixed-arg-column"
+            class="argument"
             :class="{changeable: changeable, 'editable': idx === editedArgIdx}"
             :key="idx">{{ value ? value : '   '}}</span>
     </p>
@@ -13,7 +13,7 @@
 
 <script>
   export default {
-    name: 'ArithmeticExpression',
+    name: 'TheGameArithmeticExpression',
     data() {
       return {
         expArgs: [
@@ -54,7 +54,7 @@
 </script>
 
 <style scoped>
-  .fixed-arg-column {
+  .argument {
     white-space: pre;
     display: inline-block;
     min-width: 1rem;
@@ -71,5 +71,4 @@
   .editable {
     border-color: coral;
   }
-
 </style>
