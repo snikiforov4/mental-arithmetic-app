@@ -1,19 +1,19 @@
 <template>
   <div class="settings content is-size-5 has-text-left">
     <h2 class="title is-2">Settings</h2>
-    <slider v-bind="duration"></slider>
-    <slider v-bind="difficulty"></slider>
+    <slider-item v-bind="duration"></slider-item>
+    <slider-item v-bind="difficulty"></slider-item>
     <checked-list :values="operations"></checked-list>
   </div>
 </template>
 
 <script>
-  import Slider from "./Slider";
+  import SliderItem from "./SliderItem";
   import CheckedList from "./CheckedList";
 
   export default {
     name: 'TheUserSettings',
-    components: {Slider, CheckedList},
+    components: {SliderItem, CheckedList},
     data() {
       return {
         duration: {

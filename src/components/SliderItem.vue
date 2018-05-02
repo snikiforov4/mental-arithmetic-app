@@ -8,7 +8,7 @@
 </template>
 <script>
   export default {
-    name: 'Slider',
+    name: 'SliderItem',
     props: {
       min: {
         type: [String, Number],

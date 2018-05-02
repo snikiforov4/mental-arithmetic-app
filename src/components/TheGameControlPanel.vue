@@ -4,17 +4,17 @@
       <a href="/" class="button is-danger is-outlined is-large is-capitalized is-pulled-left">Cancel</a>
     </div>
     <div class="column is-half">
-      <timer :initial-left-time="gameDuration"></timer>
+      <timer-item :initial-left-time="gameDuration"></timer-item>
     </div>
   </div>
 </template>
 
 <script>
-  import Timer from "./Timer";
+  import TimerItem from "./TimerItem";
 
   export default {
     name: 'TheGameControlPanel',
-    components: {Timer},
+    components: {TimerItem},
     data() {
       return {
         gameDuration: 10 * 60,

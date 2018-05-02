@@ -7,7 +7,7 @@
   import 'moment-duration-format';
 
   export default {
-    name: 'Timer',
+    name: 'TimerItem',
     props: {
       'initialLeftTime': {
         type: [Number, String],
