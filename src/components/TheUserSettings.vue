@@ -1,9 +1,9 @@
 <template>
   <div class="settings content is-size-5 has-text-left">
     <h2 class="title is-2">Settings</h2>
-    <Slider v-bind="duration"/>
-    <Slider v-bind="difficulty"/>
-    <CheckedList :values="operations"/>
+    <slider v-bind="duration"></slider>
+    <slider v-bind="difficulty"></slider>
+    <checked-list :values="operations"></checked-list>
   </div>
 </template>
 
