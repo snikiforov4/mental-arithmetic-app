@@ -10,7 +10,7 @@
 
 <script>
   export default {
-    name: 'UserProgress',
+    name: 'TheUserProgress',
     data() {
       return {
         lastGameResult: {correct: 13, incorrect: 12},
@@ -24,6 +24,3 @@
   };
 </script>
 
-<style scoped>
-
-</style>

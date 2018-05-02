@@ -12,7 +12,7 @@
   import CheckedList from "./CheckedList";
 
   export default {
-    name: 'GameSettings',
+    name: 'TheUserSettings',
     components: {Slider, CheckedList},
     data() {
       return {
