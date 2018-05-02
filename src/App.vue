@@ -1,15 +1,17 @@
 <template>
   <div id="app" class="container">
-    <the-game></the-game>
+    <the-user-page></the-user-page>
   </div>
 </template>
 
 <script>
- import TheGame from './components/TheGame'
+  import TheUserPage from "./components/TheUserPage";
+  import TheGame from './components/TheGame'
 
-export default {
+  export default {
   name: 'App',
   components: {
+    TheUserPage,
     TheGame,
   }
 }
