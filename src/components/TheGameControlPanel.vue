@@ -1,7 +1,7 @@
 <template>
   <div class="columns">
     <div class="column is-half">
-      <a class="button is-danger is-outlined is-large is-capitalized is-pulled-left">Cancel</a>
+      <a href="/" class="button is-danger is-outlined is-large is-capitalized is-pulled-left">Cancel</a>
     </div>
     <div class="column is-half">
       <timer :initial-left-time="gameDuration"></timer>

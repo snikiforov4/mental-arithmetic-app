@@ -33,7 +33,6 @@
   }
 </script>
 <style scoped>
-
     .slider {
         -webkit-appearance: none;
         width: 100%;
@@ -51,7 +50,7 @@
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background: #4CAF50;
+        background: #23d160;
         cursor: pointer;
     }
 
@@ -59,7 +58,7 @@
         width: 25px;
         height: 25px;
         border-radius: 50%;
-        background: #4CAF50;
+        background: #23d160;
         cursor: pointer;
     }
 </style>

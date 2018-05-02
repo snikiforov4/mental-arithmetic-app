@@ -3,7 +3,7 @@
       <h2 class="title is-2 has-text-left">Hello!</h2>
       <the-user-progress></the-user-progress>
       <the-user-settings></the-user-settings>
-      <a class="button is-primary is-outlined is-large is-capitalized is-pulled-right">Play</a>
+      <a href="/game" class="button is-success is-outlined is-large is-capitalized is-pulled-right">Play</a>
     </div>
 </template>
 <script>
